@@ -1,0 +1,27 @@
+{
+  "name": "verb-lands",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run browserify && python3 -m http.server",
+    "prod": "npm run browserify",
+    "browserify": "browserify src/js/mint.js -p esmify > src/bundle/mint.js && browserify src/js/admin.js > src/bundle/admin.js",
+    "push": "npm run prod &&  git add . && git commit -m 'bundler auto commit' && git push"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "esmify": "^2.1.1",
+    "jquery": "^3.6.0",
+    "toastr": "^2.1.4",
+    "ethers": "^5.6.8",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31",
+    "vue": "^3.2.37",
+    "web3": "^1.7.4",
+    "web3modal": "^1.9.8"
+  }
+}
