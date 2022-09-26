@@ -51,7 +51,7 @@ const app = createApp({
     return {
       //Constants
       account: null,
-      contractAddress: "0x722b14c67a4b80730d94aa34194E6DaF01a45417",
+      contractAddress: "0x390868F5fE8e2fA95a9b1C37f4E55E5dDF4DB5Ba",
       nftContract: null,
       isLoading: true,
       isPublicSale: false,
@@ -95,7 +95,6 @@ const app = createApp({
         await this.initData();
         this.isLoading = false;
       } catch (e) {
-        console.log(e);
         this.isLoading = false;
       }
     },

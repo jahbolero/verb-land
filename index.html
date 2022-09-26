@@ -24,21 +24,20 @@
     <div v-if="step == 1" data-w-id="aad61507-1d47-d65a-f08a-85045ae97057" style="display:flex" class="div-block">
       <div class="div-block-2"></div>
       <div class="text-block-2">Price: {{price}}</div>
-      <div class="text-block-2 text-block-2-spacing">Quantity:{{numberOfTokens}}</div>
+      <div class="text-block-2 text-block-2-spacing">Quantity</div>
       <div class="div-block-3">
         <div class="div-block-4">
           <a href="#" class="div-block-5 w-inline-block" v-on:click="decrement"><img src="images/Rectangle-8.svg" loading="lazy" alt=""></a>
           <div class="div-block-5 middle-icon">{{numberOfTokens}}</div>
-          <a href="#" class="div-block-5 w-inline-block" v-on:click="increment"><img src="images/Union.svg" loading="lazy" alt=""></a>
+          <a href="#" class="div-block-5 w-inline-block" v-on:click="increment"  v-on:mousedown="increment"><img src="images/Union.svg" loading="lazy" alt=""></a>
         </div>
       </div>
-      <div class="text-block-2 text-block-2-spacing2">Total:{{price * numberOfTokens}}</div>
-      <a href="#" class="button w-button" v-if="account == null || currentNetwork != network">Connect Wallet</a>     
-      <a  href="#" class="button w-button" v-else-if="!isPublicSale && !isPreSale">SALE HAS NOT STARTED</a> 
-      <a  href="#" class="button w-button" v-if="isPublicSale" v-on:click="mint">PUBLIC MINT</a>
-      <a  href="#" class="button w-button" v-else-if="isPreSale" v-on:click="presaleMint">PRESALE MINT</a>
-      <a  href="#" class="button w-button" v-if="isPreSale && isFreesaleListed" v-on:click="freeMint">FREE MINT</a>
-
+      <div class="text-block-2 text-block-2-spacing2">Total:{{price * numberOfTokens}} ETH</div>
+      <a href="#" class="button w-button" v-if="account == null || currentNetwork != network">Connect Wallet</a>      
+      <a href="#" class="button w-button" v-if="isPublicSale" v-on:click="mint">PUBLIC MINT</a>
+      <a href="#" class="button w-button" v-else-if="isPreSale" v-on:click="presaleMint">PRESALE MINT</a>
+      <a href="#" class="button w-button" v-else>SALE HAS NOT STARTED</a>
+      <a href="#" class="button w-button" v-if="isPreSale && isFreesaleListed" v-on:click="freeMint">FREE MINT</a>
     </div>
     
     <img v-if="step == 2" src="images/VERB-LOADING-resized.gif" loading="lazy" alt="" class="image-2">
