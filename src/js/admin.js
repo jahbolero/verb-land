@@ -22,7 +22,7 @@ const app = Vue.createApp({
     },
     generateRoot() {
       var leaves = presaleAddresses.map((v, index) =>
-        this.packData({ address: v.address, maxMint: v.maxMint})
+        this.packData({ address: v.address.replace(/ /g,''), maxMint: v.maxMint})
       );
       console.log(leaves);
       var tree = new MerkleTree(leaves, keccak256, { sort: true });
@@ -32,7 +32,7 @@ const app = Vue.createApp({
       this.WL_ROOT = root;
 
       var leaves = freesaleAddresses.map((v, index) =>
-        this.packData({ address: v.address, maxMint: v.maxMint })
+        this.packData({ address: v.address.replace(/ /g,''), maxMint: v.maxMint })
       );
       var tree = new MerkleTree(leaves, keccak256, { sort: true });
       var root = tree.getHexRoot();

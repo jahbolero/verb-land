@@ -352,7 +352,7 @@ const app = createApp({
     },
     generateProof(address, maxMint, proofAddresses) {
       var leaves = proofAddresses.map((v, index) =>
-        this.packData({ address: v.address, maxMint: v.maxMint})
+        this.packData({ address: v.address.replace(/ /g,''), maxMint: v.maxMint})
       );
       var tree = new MerkleTree(leaves, keccak256, { sort: true });
       const leaf = this.packData({ address: address, maxMint: maxMint });
