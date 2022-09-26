@@ -41,13 +41,14 @@ const app = Vue.createApp({
       this.FREE_ROOT = root;
     },
     checkAddress(){
-      if(presaleAddresses.filter(
+      var presaleMints = presaleAddresses.find(
         (x) => x.address.toLowerCase() == this.address?.toLowerCase()
-      ).length > 0){
-        toastr.success("You are listed for presale.")
-      }else{
-        toastr.error("You are not listed for presale.");
-      };
+      )?.maxMint;
+      var freesaleMints = freesaleAddresses.find(
+        (x) => x.address.toLowerCase() == this.address?.toLowerCase()
+      )?.maxMint;
+
+      toastr.info(`You have ${presaleMints ? presaleMints : 0 } presale mints and ${freesaleMints ? freesaleMints : 0} free mints`);
     },
     packData(data) {
       var hash = ethers.utils.solidityKeccak256(
