@@ -137,7 +137,7 @@ const app = createApp({
       } else if (this.isPreSale) {
         let addressMaxMint;
         if (this.isPresaleListed) {
-          addressMaxMint = this.isPresaleListed.maxMint
+          addressMaxMint = this.isPresaleListed.maxMint + this.isFreesaleListed ? this.isFreesaleListed.maxMint : 0
           this.maxMint = addressMaxMint - this.balance;
         } else {
           this.maxMint = this.WALLET_LIMIT;
