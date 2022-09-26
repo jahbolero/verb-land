@@ -51,7 +51,7 @@ const app = createApp({
     return {
       //Constants
       account: null,
-      contractAddress: "0x390868F5fE8e2fA95a9b1C37f4E55E5dDF4DB5Ba",
+      contractAddress: "0xb53A74bB8B1d70296138AF18346032485fF45a2D",
       nftContract: null,
       isLoading: true,
       isPublicSale: false,
@@ -61,7 +61,7 @@ const app = createApp({
       supplyCounter: 0,
       MAX_SUPPLY: 5555,
       numberOfTokens: 1,
-      network: "4", //mainnet-1 testnet-4
+      network: "1", //mainnet-1 testnet-4
       currentNetwork: "",
       WALLET_LIMIT: 2,
       maxMint: 0,
