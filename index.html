@@ -37,7 +37,7 @@
       <a href="#" class="button w-button" v-else-if="isPublicSale" v-on:click="mint">MINT</a>
       <a href="#" class="button w-button" v-else-if="isPreSale" v-on:click="presaleMint">MINT</a>
       <a href="#" class="button w-button" v-else>SALE HAS NOT STARTED</a>
-      <a href="#" class="button w-button" v-if="isPreSale && isFreesaleListed" v-on:click="freeMint">MINT</a>
+      <a href="#" class="button w-button" v-if="isPreSale && isFreesaleListed" v-on:click="freeMint">FREE MINT</a>
     </div>
     
     <img v-if="step == 2" src="images/VERB-LOADING-resized.gif" loading="lazy" alt="" class="image-2">
