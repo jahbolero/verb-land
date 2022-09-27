@@ -341,5 +341,7 @@
   { "address": "0x5aa7E31c0ad59de97120971eD8DE66e2EBc7799F", "maxMint": 1 },
   { "address": "0xf786e3B70Cd2f99936Ab206DC761735ED0E2cCB0", "maxMint": 1 },
   { "address": "0x546EE865665192459BC0ED6f23202f9ffecAE35b", "maxMint": 1 },
-  { "address": "0x46949F1DB2AC22aeD2ADE9702c9Ce73ebFeBF8A4", "maxMint": 1 }
+  { "address": "0x46949F1DB2AC22aeD2ADE9702c9Ce73ebFeBF8A4", "maxMint": 1 },
+  {"address":"0x968b1ECA3c5Af2d0A89c2aC5f09eA1b5B4d5bE7F","maxMint":1},
+{"address":"0xc372bD997De85303Be98e6109f259815a97BB803","maxMint":1}
 ]
