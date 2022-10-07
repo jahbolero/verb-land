@@ -343,5 +343,10 @@
   { "address": "0x546EE865665192459BC0ED6f23202f9ffecAE35b", "maxMint": 1 },
   { "address": "0x46949F1DB2AC22aeD2ADE9702c9Ce73ebFeBF8A4", "maxMint": 1 },
   { "address": "0x968b1ECA3c5Af2d0A89c2aC5f09eA1b5B4d5bE7F", "maxMint": 1 },
-  { "address": "0xc372bD997De85303Be98e6109f259815a97BB803", "maxMint": 1 }
+  { "address": "0xc372bD997De85303Be98e6109f259815a97BB803", "maxMint": 1 },
+  { "address": "0x9ff20E15DBa271C9fFd79dC20635501C71F40D5C", "maxMint": 2 },
+  { "address": "0x98e1fB3A452DeB238C5124B159Efaf8a45C788ac", "maxMint": 2 },
+  { "address": "0x74C06E8241Ae153FDD60D3316d297AE577404D38", "maxMint": 2 },
+  { "address": "0x820199fc3f2de6e81971442c33b05138893b0E4e", "maxMint": 3 },
+  { "address": "0x70Af5357041717ca76e854EF583E851148Fd6bE4", "maxMint": 3 }
 ]
